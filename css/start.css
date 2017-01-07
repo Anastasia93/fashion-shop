@@ -1,0 +1,388 @@
+/*------------additional------------*/
+body {
+    font-family: OpenSans-Bold, sans-serif;
+    margin: 0;
+    max-width: 1300px;
+    min-width: 375px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    outline: none;
+}
+
+input[type="text"]:hover {
+    outline: none;
+}
+
+header, nav,  footer, .arrivals {
+    max-width: 1180px;
+    margin: 0 4.6153%;
+}
+
+body, .carousel, .propositions, .extra-nav {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.display_carousel, .tablet_carousel, .mobile_carousel {
+    width: 100%;
+}
+
+.tablet_search {
+    display: none;
+}
+/*------------carousel------------*/
+.tablet_carousel {
+    display: none;
+}
+
+.carousel-container {
+    position: relative;
+    height: 850px;
+}
+
+.banner {
+    position: absolute;
+    z-index: 10;
+    margin-left: 35.3076%;
+    margin-top: 125px;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.dots-container {
+    position: absolute;
+    width: 100%;
+    bottom: 32px;
+    border-top: 1px solid #717171;
+    opacity: 0.5;
+}
+
+.dot {
+    cursor:pointer;
+    height: 6px;
+    width: 6px;
+    margin-right: 18px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot:first-child {
+    margin-left: 46.5384%;
+    margin-top: 37px;
+}
+
+.active, .dot:hover {
+    background-color: #f14a58;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/*------------propositions------------*/
+.propositions {
+    letter-spacing: -.36em;
+}
+
+.prop {
+    position: relative;
+    width: 50%;
+    height: 385px;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+    letter-spacing: normal;
+}
+
+.prop p {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    right: 15%;
+}
+
+.prop em {
+    font-family: Times New Roman Italiac, serif;
+    font-size: 12pt;
+    display: block;
+    padding-top: 7px;
+}
+
+.prop em:hover {
+    opacity: 0.7;
+}
+
+.prop em:active {
+    opacity: 0.3;
+}
+
+.prop a {
+    text-decoration: none;
+    color: #f14a58;
+}
+
+.prop span {
+    color: black;
+    font-size: 21.5pt;
+    display: block;
+    margin-top: 2px;
+}
+
+.prop span:hover {
+    color: #f14a58;
+}
+
+.prop span:active {
+    color: brown;
+}
+
+.prop:first-child img {
+    width: 93.3%;
+    margin-top: 14px;
+    margin-left: 26px;
+}
+
+.prop:first-child span {
+    margin-right: 2px;
+}
+
+.prop:last-child span {
+    margin-right: 8px;
+}
+
+.display_prop img{
+    margin-top: 1px;
+    margin-left: 26px;
+}
+
+.display_prop p {
+    margin-right: 9px;
+    font-size: 12pt;
+}
+
+.tablet_prop {
+    display: none;
+}
+/*------------arrivals------------*/
+.arrivals {
+    letter-spacing: -.36em;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.arrivals .title {
+    text-align: center;
+    margin: 120px auto 75px;
+    font-size: 38.5pt;
+    letter-spacing: normal;
+}
+
+.arrivals .title a:hover {
+    color: #f14a58;
+}
+
+.arrivals .title a:active {
+    color: brown;
+}
+
+.items {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 0.01em;
+    margin: 10px 6.0169% 0 2px;
+}
+
+.items p {
+    font-family: Roboto-Bold, sans-serif;
+    display: block;
+    line-height: 1.7;
+    margin-top: 38px;
+    font-size: 11pt;
+    letter-spacing: 0.01em;
+}
+
+.items p:hover {
+    color: #f14a58;
+}
+
+.items p:active {
+    color: brown;
+}
+
+.items span:last-child {
+    display: block;
+    margin-top: 9px;
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 11.5pt;
+}
+
+.arrivals button {
+    font-family: OpenSans-Bold, sans-serif;
+    display: block;
+    margin: 75px auto 75px;
+    border: 1px solid #d2d1d1;
+    background-color: white;
+    padding: 18px 100px 20px 102px;
+    font-size: 19pt;
+
+}
+
+.arrivals button:hover {
+    color: #f14a58;
+    border-color: #f14a58;
+    cursor: pointer;
+}
+
+.arrivals button:active {
+    border-color: brown;
+    color: brown;
+}
+/*------------tablet------------*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    body, .carousel, .propositions, .extra-nav {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    hr, input, .display_carousel, .input, .display_prop, .display_item, .items:last-child {
+        display: none;
+    }
+
+    .tablet_search, .tablet_prop {
+        display: inline-block;
+    }
+
+    .tablet_carousel {
+        display: block;
+    }
+
+    .arrivals {
+        max-width: 690px;
+        margin: 0 4.6153%;
+    }
+
+    .arrivals .title {
+        margin: 0 auto 75px;
+    }
+
+    .prop {
+        width: 68.5507%;
+    }
+
+    .tablet_prop {
+        width: 31.4492%;
+        position: relative;
+    }
+
+    .tablet_prop span {
+        color: #f14a58;
+    }
+
+    .tablet_prop p {
+        display: block;
+        position: absolute;
+        top: 176px;
+        left: 7%;
+    }
+
+    .tablet_prop img {
+        width: 63%;
+        margin-left: 18.5%;
+        margin-top: 12px;
+    }
+
+    .tablet_prop em {
+        padding-right: 5px;
+    }
+
+    .arrivals .title {
+        font-size: 31pt;
+        margin: -52px 0 63px 1%
+    }
+
+    .items {
+        margin: 10px -8px 0 47px;
+    }
+
+    .items img {
+        width: 188px;
+    }
+
+    .arrivals button {
+        margin: 62px 0 137px 27%;
+        padding: 18px 91px 20px 105px;
+        font-size: 16pt;
+    }
+
+}
+/*------------mobile------------*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 767px) {
+    .tablet_carousel, .display_prop {
+        display: none;
+    }
+
+    .carousel-container {
+        overflow: hidden;
+        height: 450px;
+    }
+
+    .slide img {
+        width: 208%;
+        margin-left: -50%;
+        margin-top: -63px;
+    }
+
+    .banner {
+        margin-top: 17%;
+        margin-left: 23%;
+        width: 62%;
+    }
+
+    .propositions div {
+        width: 100%;
+        height: 30%;
+    }
+
+    .arrivals .title {
+        margin: 31px auto;
+        font-size: 25pt;
+    }
+
+    .items img{
+        width: 100%;
+    }
+
+    .arrivals .items {
+        width: 43%;
+    }
+
+    .tablet_item, .display_item {
+        display: none;
+    }
+
+}

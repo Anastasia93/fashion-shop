@@ -1,0 +1,304 @@
+/*------------additional------------*/
+body {
+    font-family: OpenSans-Bold, sans-serif;
+    margin: 0;
+    max-width: 1300px;
+    min-width: 375px;
+}
+
+a {
+    text-decoration: none;
+    color: #030303;
+}
+
+header, nav, footer, .shopping-bag, #chosen-items, .back-to-catalog {
+    max-width: 1180px;
+    margin: 0 4.6153%;
+}
+
+body, .extra-nav, .border {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.border {
+    border-top: 1px #d2d1d1 solid;
+}
+
+.tablet_search, .comma {
+    display: none;
+}
+
+input[type="text"]:hover {
+    outline: none;
+}
+/*------------shopping-bag------------*/
+.shopping-bag button {
+    font-family: OpenSans-Bold, sans-serif;
+    display: inline-block;
+    border: none;
+    margin: 9px 0 15px 25px;
+    background-color: white;
+    font-size: 20.3pt;
+    outline: none;
+}
+
+.shopping-bag button:hover {
+    opacity: 0.7;
+}
+/*------------chosen-items------------*/
+#chosen-items {
+    letter-spacing: -.36em;
+    margin-top: 30px;
+}
+
+.item_bag {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+    width: 50%;
+}
+
+.item_bag div {
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: normal;
+}
+
+.item_bag p {
+    font-family: Roboto-Regular, sans-serif;
+    display: block;
+    font-size: 9.4pt;
+    letter-spacing: 0.01em;
+    margin: 0 0 12px 11px;
+    line-height: 1;
+}
+
+.item_bag .with-br + p {
+    font-family: Roboto-Regular, sans-serif;
+    display: block;
+    font-size: 9.4pt;
+    letter-spacing: 0.01em;
+    margin: 0 0 12px 11px;
+    line-height: 1;
+}
+
+.item_bag .with-br {
+    margin-bottom: 12px !important;
+}
+
+.item_bag p:first-child, .item_bag:last-child .item-details p:first-child {
+    font-family: Roboto-Bold, sans-serif;
+    font-size: 11pt;
+    margin: 8px 0 14px 9px;
+    line-height: 1.7;
+}
+
+.item_bag button {
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 10.3pt;
+    margin-top: 17px;
+    margin-left: 4px;
+    border: none;
+    background-color: white;
+    color: #f14a58;
+    display: inline-block;
+}
+
+.item_bag button:last-child {
+    margin-top: 17px;
+}
+
+.item-image p {
+    text-align: center;
+    margin: 23px 1px 49px 3px;
+    font-size: 10.5pt;
+}
+
+.item-details {
+    margin-left: 2.1186%;
+    width: 47.2%;
+}
+
+.item-details a:hover {
+    color: #f14a58;
+}
+
+.item-details a:active, .item-details p:hover {
+    color: brown;
+}
+
+.item-details button {
+    outline: none;
+}
+
+.item-details button:hover {
+    cursor: pointer;
+    color: brown;
+}
+
+.item-details button:active {
+    color: black;
+}
+
+.item_bag:last-child .item-details button {
+    margin-top: 31px;
+}
+
+.item_bag:last-child .item-details p {
+    margin: -3px 12px 15px 11px;
+}
+
+#empty-bag {
+    margin: 100px 30%;
+}
+/*------------notification------------*/
+.notification {
+    font-family: OpenSans-Bold, sans-serif;
+    height: 40px;
+    background-color: #f7f7f7;
+    font-size: 9.1pt;
+    border-top: 1px #d2d1d1 solid;
+    margin-top: 26px;
+}
+
+.notification p {
+    margin: 0;
+    padding-top: 9px;
+    padding-left: 22.8461%;
+}
+/*------------buy-now------------*/
+#buy-now {
+    position: relative;
+}
+
+#buy-now p {
+    font-family: Roboto-Bold, sans-serif;
+}
+
+#buy-now button {
+    position: absolute;
+    display: inline-block;
+    font-family: OpenSans-Bold, sans-serif;
+    margin: 30px 0 0 25%;
+    border: 1px solid #d2d1d1;
+    background-color: white;
+    padding: 17px 8.7692% 21px 8.923%;
+    font-size: 19pt;
+    outline: none;
+}
+
+#buy-now button:hover {
+    color: #f14a58;
+    border-color: #f14a58;
+}
+
+#buy-now button:active {
+    color: brown;
+    border-color: brown;
+}
+
+#buy-now button:first-child {
+    font-family: Roboto-Bold, sans-serif;
+    display: inline-block;
+    font-size: 10.2pt;
+    margin: 57px 0 90px 7%;
+    padding: 0;
+    border: none;
+    position: static;
+}
+
+.total-cost {
+    position: absolute;
+    display: inline-block;
+    right: 7%;
+    top: 48px;
+    text-align: right;
+}
+
+#buy-now .total-cost p {
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 14.5pt;
+    margin-top: -3px;
+}
+
+#buy-now .total-cost p:first-child {
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 9.5pt;
+    margin: 0;
+}
+/*------------tablet------------*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    hr, input, .input, .items:last-child, .display_item, #display_collections, .bag-price, .dropdown:last-child .comma {
+        display: none;
+    }
+
+    header, nav, .shopping-bag, #chosen-items, footer, .back-to-catalog {
+        max-width: 690px;
+        margin: 0 4.6153%;
+    }
+
+    body, .extra-nav, .border {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+
+    .comma {
+        display: inline;
+    }
+
+    .tablet_search {
+        display: inline-block;
+    }
+
+    #chosen-items img {
+        width: 145px;
+        height: 205px;
+    }
+
+    #chosen-items {
+        margin-top: 30px;
+    }
+
+    .notification p {
+        margin: 0;
+        padding-top: 9px;
+        padding-left: 5%;
+    }
+
+    #buy-now button {
+        margin-left: 17%;
+    }
+}
+/*------------mobile------------*/
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 767px) {
+    .input {
+        display: none;
+    }
+
+    .item_bag {
+        width: 100%;
+    }
+
+    #chosen-items {
+        margin: 30px 23% 0 23%;;
+    }
+
+    .notification {
+        height: 50px;
+    }
+
+    .notification p {
+        padding-left: 30%;
+        width: 377px;
+        text-align: center;
+    }
+
+    #buy-now button {
+        margin-left: 20%;
+    }
+}
