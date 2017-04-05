@@ -1,7 +1,7 @@
 Minimalistic E-commerce web-site on pure basics web-development technologies.
 
-Technology stack:
+# Technology stack:
 
-HTML5;
-CSS3;
-Javascript(ECMAScript5);
+- HTML5
+- CSS3
+- Javascript(ECMAScript5)
