@@ -1,4 +1,4 @@
-Minimalistic E-commerce web-site on pure basics web-development technologies.
+Minimalistic E-commerce web-site on pure basic web-development technologies.
 
 # Technology stack:
 
